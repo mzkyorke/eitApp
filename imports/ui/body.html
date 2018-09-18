@@ -1,0 +1,29 @@
+<body>
+	<div class="container">
+		<header>
+			<h1>EiT Database</h1>
+
+			<form class="new-task">
+				<input type="text" name="text" placeholder="Type to add new tasks">
+			</form>
+			<!-- <form class="new-entry">
+				First Name: <input type="text" name="firstname" placeholder=""/>
+				Surname: <input type="text" name="surname" placeholder=""/>	
+				<br>
+				Gender: <input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+				<br>
+				Birthday: <input type="date" name="bday">
+				<input type="submit" name="submit" value="Submit" style="position: relative; left: 200px;">
+			</form> -->
+		</header>
+
+		<ul>
+			{{#each tasks}}
+				{{>task}}
+			{{/each}}
+		</ul>
+	</div>
+</body>
+
